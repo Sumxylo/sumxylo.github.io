@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Codeforces Round #593 (Div. 2) | Sumxylo&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&amp;apos;$&amp;apos;,&amp;apos;$&amp;apos;], [&amp;apos;\\(&amp;apos;,&amp;apos;\\)&amp;apos;]]} });     链接Codeforces Round #593 (Div. 2)Codeforces Round #593 (Div. 2) Editorial 前言17号早上收到CF发来的邮件说晚上有比赛，想了想时间还行，于是就这样报上名了……晚上21:">
+<meta name="keywords" content="算法竞赛,战记,Codeforces">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces Round #593 (Div. 2)">
+<meta property="og:url" content="https:&#x2F;&#x2F;blog.sumxylo.top&#x2F;20191018-Codeforces-Round-593-Div-2&#x2F;">
+<meta property="og:site_name" content="Sumxylo&#39;s Blog">
+<meta property="og:description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&amp;apos;$&amp;apos;,&amp;apos;$&amp;apos;], [&amp;apos;\\(&amp;apos;,&amp;apos;\\)&amp;apos;]]} });     链接Codeforces Round #593 (Div. 2)Codeforces Round #593 (Div. 2) Editorial 前言17号早上收到CF发来的邮件说晚上有比赛，想了想时间还行，于是就这样报上名了……晚上21:">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="https:&#x2F;&#x2F;blog.sumxylo.top&#x2F;pic&#x2F;00001.jpg">
+<meta property="og:updated_time" content="2019-11-01T10:37:09.125Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;blog.sumxylo.top&#x2F;pic&#x2F;00001.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Sumxylo&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Sumxylo&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://blog.sumxylo.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Codeforces-Round-593-Div-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/20191018-Codeforces-Round-593-Div-2/" class="article-date">
+  <time datetime="2019-10-18T04:56:18.000Z" itemprop="datePublished">2019-10-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Codeforces Round #593 (Div. 2)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><a href="https://codeforces.com/contest/1236" target="_blank" rel="noopener">Codeforces Round #593 (Div. 2)</a><br><a href="https://codeforces.com/blog/entry/70654" target="_blank" rel="noopener">Codeforces Round #593 (Div. 2) Editorial</a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>17号早上收到CF发来的邮件说晚上有比赛，想了想时间还行，于是就这样报上名了……<br>晚上21:20去洗澡，刚出发就突然想起来比赛的事，于是飞速洗澡，在21:35刚好回到寝室。</p>
+<h1 id="考试过程"><a href="#考试过程" class="headerlink" title="考试过程"></a>考试过程</h1><h2 id="A-Stones"><a href="#A-Stones" class="headerlink" title="A - Stones"></a>A - Stones</h2><p>考试开始了，CF不出所料——卡了。于是我先看了B题。看到一半，A题出来了，我看到A题过了好多人，又跑回去看A题</p>
+<h3 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h3><p>有三堆石头，编号为$1,2,3$，分别有$a,b,c$块石头，之后进行操作，每次从1中取1块，2中取2块，或从2中取1块，3中取2块。求最大能取走的石头数目。</p>
+<h3 id="做题过程"><a href="#做题过程" class="headerlink" title="做题过程"></a>做题过程</h3><p>十分标准的A题难度，直接写了一发暴力交上去，然后……<em>Wrong Answer on Pretest 2</em><br>于是我又交了一个新的暴力，交上去……<em>Pretests Passed</em><br>然后我就没管了，去看B题了。<br>最终结果AC。</p>
+<h2 id="B-Alice-and-the-List-of-Presents"><a href="#B-Alice-and-the-List-of-Presents" class="headerlink" title="B - Alice and the List of Presents"></a>B - Alice and the List of Presents</h2><p>A题出来看B题，因为之前看了一半，所以这时很快就理解题意了。</p>
+<h3 id="题目大意-1"><a href="#题目大意-1" class="headerlink" title="题目大意"></a>题目大意</h3><p>有$m$个集合，要求$1~n$这$n$个数字在这$m$个集合中至少出现一次，求方案数$mod(1E9+7)$，集合有编号，所以${1}{}$与${}{1}$是两种不同的方案。</p>
+<h3 id="做题过程-1"><a href="#做题过程-1" class="headerlink" title="做题过程"></a>做题过程</h3><p>想到分步乘法，只考虑单个数字，则其方案数为$\sum_{i=1}^{m}C_m^i=2^m-1$，而共有$n$个数字，则最终答案为$(2^m-1)^n$，只需写一个快速幂。<br>最终结果AC。</p>
+<h2 id="C-Labs"><a href="#C-Labs" class="headerlink" title="C - Labs"></a>C - Labs</h2><p>此题将</p>
+<blockquote>
+<p>大胆猜想，不用求证</p>
+</blockquote>
+<p>的精神发扬光大</p>
+<h3 id="题目大意-2"><a href="#题目大意-2" class="headerlink" title="题目大意"></a>题目大意</h3><p>将数字$1~n^2$分为$n$组，每组$n$个数字，，对于两个组$A,B$，定义$f(A,B)=u&gt;v,u\in A且v\in B的个数$。找到一种分组方式，使对于所有可能的$A,B$组合$(A\neq B)$，$min(f(A,B))$最大。</p>
+<h3 id="做题过程-2"><a href="#做题过程-2" class="headerlink" title="做题过程"></a>做题过程</h3><p>观察题目样例</p>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 8 5</span><br><span class="line">9 3 4</span><br><span class="line">7 6 1</span><br></pre></td></tr></table></figure>
+<p>我把输出重排一下，得到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 6 7</span><br><span class="line">2 5 8</span><br><span class="line">3 4 9</span><br></pre></td></tr></table></figure>
+<p>我发现他在走“之”字。<br>然后就写了个之字程序交上去……<em>Runtime error on pretest 3<em><br>心里第一个想到的就是数组问题，仔细一看，数据范围看错了……<br>再交一次……</em>Pretests Passed</em></p>
+<blockquote>
+<p>Unsuccessful Submit -50</p>
+</blockquote>
+<p>最终结果AC</p>
+<h2 id="D-Alice-and-the-Doll"><a href="#D-Alice-and-the-Doll" class="headerlink" title="D - Alice and the Doll"></a>D - Alice and the Doll</h2><p>开题15分钟就想到了正解，只不过因为各种细节问题，直到考试结束也没有调出来……</p>
+<h3 id="题目大意-3"><a href="#题目大意-3" class="headerlink" title="题目大意"></a>题目大意</h3><p>在一个$n*m$的方格纸上行走，方格纸上有$k$个障碍物，初始位置$(1,1)$，初始方向向右，可以向前行走一格或向右转弯，一个格子上只能转一次，不可以走入已经走过的格子，不可走出方格纸，不可走入障碍物。问是否有走法能经过所有非障碍格。</p>
+<h3 id="做题过程-3"><a href="#做题过程-3" class="headerlink" title="做题过程"></a>做题过程</h3><p>起初各种胡思乱想，最后总算走到正路上了。在写代码时有试过一些虽然正确但非常难写的方式，在发现更简单方便的写法后又删掉重写，浪费了一些时间，但不改的话更费时间。<br>在一些细节问题上犯了很多错误，总之没有在考试结束前调出来。考试结束后第二天提交又WA了数次，在18号上午终于AC了。</p>
+<h3 id="题目做法"><a href="#题目做法" class="headerlink" title="题目做法"></a>题目做法</h3><p>根据题意，走的路线将会是一个顺时针由外向内的螺旋。这意味着如果想要走完全程，必须不能再向前走了才能转弯。从起始位置开始，进行若干次操作，每次操作找到当前位置沿当前方向可以前进到的最远位置，并把行进的长度$len$累加起来，直到无路可走时，如果$len=n*m-k$，则存在这样的走法，否则不存在。<br>我们不需记录有哪些格子被走过，因为走的是螺旋线，只需要记录上下左右四条边，因为如果行进穿过这四条边，就一定进入之前已经走过的格子。<br>因为查询可以走到的最远位置只在某一行或一列上进行，所以我们记录每个行、列的障碍的位置，把位置排好序，查询时就可以是$log$复杂度。</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>考试是在寝室进行的，有点吵。考完就去睡觉了，第二天继续调D题，第二天上午终于调出来了。<br><code>Rank=1939</code><br><code>Rating+=18;</code><br><code>Rating=1518;</code><br>于是乎，大学的第一场CF就这么结束了？</p>
+<p><img src="/pic/00001.jpg" alt="我太难了"></p>
+<h1 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h1><h2 id="A-Stones-1"><a href="#A-Stones-1" class="headerlink" title="A - Stones"></a>A - Stones</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> <span class="meta-keyword">elif</span> <span class="meta-keyword">else</span> <span class="meta-keyword">if</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rd(a) scanf(<span class="meta-string">"%d"</span>,&amp;a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wt(a) printf(<span class="meta-string">"%d "</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wtl(a) printf(<span class="meta-string">"%d\n"</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fo(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> init(a,b) memset(a,b,sizeof(a))</span></span><br><span class="line"><span class="keyword">int</span> t,a,b,c;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    rd(t);</span><br><span class="line">    <span class="keyword">int</span> bestans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(t--)&#123;</span><br><span class="line">        rd(a),rd(b),rd(c);</span><br><span class="line">        fo(i,<span class="number">0</span>,<span class="number">50</span>)</span><br><span class="line">            fo(j,<span class="number">0</span>,<span class="number">50</span>)</span><br><span class="line">                <span class="keyword">if</span>(i&lt;=a&amp;&amp;i*<span class="number">2</span>+j&lt;=b&amp;&amp;j*<span class="number">2</span>&lt;=c)</span><br><span class="line">                    <span class="keyword">if</span>((i+j)*<span class="number">3</span>&gt;bestans)</span><br><span class="line">                        bestans=(i+j)*<span class="number">3</span>;</span><br><span class="line">        wtl(bestans);</span><br><span class="line">        bestans=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="B-Alice-and-the-List-of-Presents-1"><a href="#B-Alice-and-the-List-of-Presents-1" class="headerlink" title="B - Alice and the List of Presents"></a>B - Alice and the List of Presents</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> <span class="meta-keyword">elif</span> <span class="meta-keyword">else</span> <span class="meta-keyword">if</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rd(a) scanf(<span class="meta-string">"%d"</span>,&amp;a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wt(a) printf(<span class="meta-string">"%d "</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wtl(a) printf(<span class="meta-string">"%d\n"</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fo(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> init(a,b) memset(a,b,sizeof(a))</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MOD=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans=<span class="number">1</span>,base=a;</span><br><span class="line">    <span class="keyword">while</span>(b)&#123;</span><br><span class="line">        <span class="keyword">if</span>(b&amp;<span class="number">1</span>!=<span class="number">0</span>)</span><br><span class="line">            ans=(ans*<span class="number">1l</span>l*base)%MOD;</span><br><span class="line">        base=(base*<span class="number">1l</span>l*base)%MOD;</span><br><span class="line">        b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    rd(n),rd(m);</span><br><span class="line">    <span class="keyword">int</span> x=<span class="built_in">pow</span>(<span class="number">2</span>,m)<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">int</span> y=<span class="built_in">pow</span>(x,n);</span><br><span class="line">    wtl(y);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="C-Labs-1"><a href="#C-Labs-1" class="headerlink" title="C - Labs"></a>C - Labs</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> <span class="meta-keyword">elif</span> <span class="meta-keyword">else</span> <span class="meta-keyword">if</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rd(a) scanf(<span class="meta-string">"%d"</span>,&amp;a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wt(a) printf(<span class="meta-string">"%d "</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wtl(a) printf(<span class="meta-string">"%d\n"</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fo(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> init(a,b) memset(a,b,sizeof(a))</span></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">301</span>][<span class="number">301</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    rd(n);</span><br><span class="line">    fo(i,<span class="number">0</span>,n<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">if</span>(i&amp;<span class="number">1</span>)</span><br><span class="line">            fo(j,<span class="number">0</span>,n<span class="number">-1</span>)</span><br><span class="line">                a[i][j]=i*n+j+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            fo(j,<span class="number">0</span>,n<span class="number">-1</span>)</span><br><span class="line">                a[i][n-j<span class="number">-1</span>]=i*n+j+<span class="number">1</span>;</span><br><span class="line">    fo(i,<span class="number">0</span>,n<span class="number">-1</span>)&#123;</span><br><span class="line">        fo(j,<span class="number">0</span>,n<span class="number">-1</span>)</span><br><span class="line">            wt(a[j][i]);</span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">""</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="D-Alice-and-the-Doll-1"><a href="#D-Alice-and-the-Doll-1" class="headerlink" title="D - Alice and the Doll"></a>D - Alice and the Doll</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> <span class="meta-keyword">elif</span> <span class="meta-keyword">else</span> <span class="meta-keyword">if</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rd(a) scanf(<span class="meta-string">"%d"</span>,&amp;a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wt(a) printf(<span class="meta-string">"%d "</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wtl(a) printf(<span class="meta-string">"%d\n"</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fo(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> init(a,b) memset(a,b,sizeof(a))</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vi;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">1e5</span>+<span class="number">10</span>;</span><br><span class="line">vi ro[N],co[N];</span><br><span class="line"><span class="keyword">int</span> n,m,k;</span><br><span class="line"><span class="keyword">int</span> dir=<span class="number">1</span>,a=<span class="number">1</span>,b=<span class="number">0</span>,l=<span class="number">0</span>,r,u=<span class="number">0</span>,d;</span><br><span class="line">ll cnt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    rd(n),rd(m),rd(k);</span><br><span class="line">    fo(i,<span class="number">1</span>,n)</span><br><span class="line">        ro[i].push_back(<span class="number">0</span>);</span><br><span class="line">    fo(i,<span class="number">1</span>,m)</span><br><span class="line">        co[i].push_back(<span class="number">0</span>);</span><br><span class="line">    fo(i,<span class="number">1</span>,k)&#123;</span><br><span class="line">        <span class="keyword">int</span> x,y;</span><br><span class="line">        rd(x),rd(y);</span><br><span class="line">        ro[x].push_back(y);</span><br><span class="line">        co[y].push_back(x);</span><br><span class="line">    &#125;</span><br><span class="line">    fo(i,<span class="number">1</span>,n)&#123;</span><br><span class="line">        <span class="built_in">std</span>::sort(ro[i].begin(),ro[i].end());</span><br><span class="line">        ro[i].push_back(m+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    fo(i,<span class="number">1</span>,m)&#123;</span><br><span class="line">        <span class="built_in">std</span>::sort(co[i].begin(),co[i].end());</span><br><span class="line">        co[i].push_back(n+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    r=m+<span class="number">1</span>,d=n+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">        vi::iterator po;</span><br><span class="line">        <span class="keyword">int</span> p;</span><br><span class="line">        <span class="keyword">if</span>(dir==<span class="number">1</span>)&#123;</span><br><span class="line">            po=upper_bound(ro[a].begin(),ro[a].end(),b);</span><br><span class="line">            p=<span class="built_in">std</span>::min(r,*po);</span><br><span class="line">            <span class="keyword">if</span>(p-b<span class="number">-1</span>==<span class="number">0</span>)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            cnt+=p-b<span class="number">-1</span>;</span><br><span class="line">            u=a;</span><br><span class="line">            b=p<span class="number">-1</span>;</span><br><span class="line">            dir=<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(dir==<span class="number">2</span>)&#123;</span><br><span class="line">            po=upper_bound(co[b].begin(),co[b].end(),a);</span><br><span class="line">            p=<span class="built_in">std</span>::min(d,*po);</span><br><span class="line">            <span class="keyword">if</span>(p-a<span class="number">-1</span>==<span class="number">0</span>)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            cnt+=p-a<span class="number">-1</span>;</span><br><span class="line">            r=b;</span><br><span class="line">            a=p<span class="number">-1</span>;</span><br><span class="line">            dir=<span class="number">3</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(dir==<span class="number">3</span>)&#123;</span><br><span class="line">            po=upper_bound(ro[a].begin(),ro[a].end(),b)<span class="number">-1</span>;</span><br><span class="line">            p=<span class="built_in">std</span>::max(l,*po);</span><br><span class="line">            <span class="keyword">if</span>(b-p<span class="number">-1</span>==<span class="number">0</span>)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            cnt+=b-p<span class="number">-1</span>;</span><br><span class="line">            d=a;</span><br><span class="line">            b=p+<span class="number">1</span>;</span><br><span class="line">            dir=<span class="number">4</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(dir==<span class="number">4</span>)&#123;</span><br><span class="line">            po=upper_bound(co[b].begin(),co[b].end(),a)<span class="number">-1</span>;</span><br><span class="line">            p=<span class="built_in">std</span>::max(u,*po);</span><br><span class="line">            <span class="keyword">if</span>(a-p<span class="number">-1</span>==<span class="number">0</span>)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            cnt+=a-p<span class="number">-1</span>;</span><br><span class="line">            l=b;</span><br><span class="line">            a=p+<span class="number">1</span>;</span><br><span class="line">            dir=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(cnt==<span class="number">1l</span>l*n*m-k)</span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">"Yes"</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">"No"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script>
+<script type="text/javascript">
+var gitalk = new Gitalk({
+  clientID: 'fa3b5faae30e9612b010',
+  clientSecret: 'ff498202b20e29bd811889d912713a1eb44b2320',
+  repo: 'sumxylo.github.io',
+  owner: 'Sumxylo',
+  admin: ['Sumxylo'],
+  id: md5('2019-10-18 12:56:18'),
+  distractionFreeMode: false
+});
+gitalk.render('gitalk-container');
+</script>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.sumxylo.top/20191018-Codeforces-Round-593-Div-2/" data-id="ck3ztf0u2001bmjbs9xxh68x2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Codeforces/" rel="tag">Codeforces</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%88%98%E8%AE%B0/" rel="tag">战记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/" rel="tag">算法竞赛</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/20191024-HAOI2008-%E7%A1%AC%E5%B8%81%E8%B4%AD%E7%89%A9/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          [HAOI2008]硬币购物
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CUPOJ/" rel="tag">CUPOJ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Codeforces/" rel="tag">Codeforces</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%88%98%E8%AE%B0/" rel="tag">战记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E5%8D%A1/" rel="tag">打卡</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E8%A1%A8/" rel="tag">打表</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%87%E5%8C%96%E8%AF%BE/" rel="tag">文化课</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/" rel="tag">算法竞赛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag">线段树</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" rel="tag">网络流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BB%E4%B9%A6/" rel="tag">读书</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CUPOJ/" style="font-size: 16.67px;">CUPOJ</a> <a href="/tags/Codeforces/" style="font-size: 13.33px;">Codeforces</a> <a href="/tags/DP/" style="font-size: 10px;">DP</a> <a href="/tags/%E6%88%98%E8%AE%B0/" style="font-size: 13.33px;">战记</a> <a href="/tags/%E6%89%93%E5%8D%A1/" style="font-size: 10px;">打卡</a> <a href="/tags/%E6%89%93%E8%A1%A8/" style="font-size: 10px;">打表</a> <a href="/tags/%E6%96%87%E5%8C%96%E8%AF%BE/" style="font-size: 13.33px;">文化课</a> <a href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/" style="font-size: 20px;">算法竞赛</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 10px;">线段树</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" style="font-size: 10px;">网络流</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 13.33px;">读书</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/20191210-SCOI2007-%E9%99%8D%E9%9B%A8%E9%87%8F/">[SCOI2007]降雨量</a>
+          </li>
+        
+          <li>
+            <a href="/20191210-HNOI2009%E9%9B%86%E8%AE%ADDay4-%E6%8E%A2%E9%99%A9%E8%AE%A1%E5%88%92/">HNOI2009集训Day4 探险计划</a>
+          </li>
+        
+          <li>
+            <a href="/20191204-%E3%80%8A%E8%BE%9B%E4%BA%A5%EF%BC%9A%E8%AE%A1%E5%88%92%E5%A4%96%E9%9D%A9%E5%91%BD%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%89%93%E5%8D%A1/">《辛亥：计划外革命》读书打卡</a>
+          </li>
+        
+          <li>
+            <a href="/20191031-%E4%BE%9D%E6%B3%95%E6%B2%BB%E5%9B%BD%E5%92%8C%E4%BB%A5%E5%BE%B7%E6%B2%BB%E5%9B%BD%E7%9A%84%E5%85%B3%E7%B3%BB/">依法治国和以德治国的关系</a>
+          </li>
+        
+          <li>
+            <a href="/20191028-Codeforces-Round-596-Div-2/">Codeforces Round #596 (Div. 2)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Sumxylo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

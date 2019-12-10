@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>[SCOI2007]降雨量 | Sumxylo&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&amp;apos;$&amp;apos;,&amp;apos;$&amp;apos;], [&amp;apos;\\(&amp;apos;,&amp;apos;\\)&amp;apos;]]} });     [SCOI2007]降雨量新人求助，降雨量那题，本机AC提交RE。。。BZOJ镇站之宝 链接CUPOJBZOJ 吐槽我好像也“本机AC提交RE”了……不得不说这题细节真的很多……至少对我而言。 做法首先我们要在题目给你的降雨量序列里不相邻的">
+<meta name="keywords" content="算法竞赛,CUPOJ,线段树">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[SCOI2007]降雨量">
+<meta property="og:url" content="https:&#x2F;&#x2F;blog.sumxylo.top&#x2F;20191210-SCOI2007-%E9%99%8D%E9%9B%A8%E9%87%8F&#x2F;">
+<meta property="og:site_name" content="Sumxylo&#39;s Blog">
+<meta property="og:description" content="MathJax.Hub.Config({ tex2jax: {inlineMath: [[&amp;apos;$&amp;apos;,&amp;apos;$&amp;apos;], [&amp;apos;\\(&amp;apos;,&amp;apos;\\)&amp;apos;]]} });     [SCOI2007]降雨量新人求助，降雨量那题，本机AC提交RE。。。BZOJ镇站之宝 链接CUPOJBZOJ 吐槽我好像也“本机AC提交RE”了……不得不说这题细节真的很多……至少对我而言。 做法首先我们要在题目给你的降雨量序列里不相邻的">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2019-12-10T12:02:01.422Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Sumxylo&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Sumxylo&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://blog.sumxylo.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-SCOI2007-降雨量" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/20191210-SCOI2007-%E9%99%8D%E9%9B%A8%E9%87%8F/" class="article-date">
+  <time datetime="2019-12-10T11:27:40.000Z" itemprop="datePublished">2019-12-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      [SCOI2007]降雨量
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<h1 id="SCOI2007-降雨量"><a href="#SCOI2007-降雨量" class="headerlink" title="[SCOI2007]降雨量"></a>[SCOI2007]降雨量</h1><p><a href="https://www.lydsy.com/JudgeOnline/wttl/thread.php?tid=1108" target="_blank" rel="noopener">新人求助，降雨量那题，本机AC提交RE。。。</a><br>BZOJ镇站之宝</p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p><a href="https://oj.cupacm.com/problem/submit/1976" target="_blank" rel="noopener">CUPOJ</a><br><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=1067" target="_blank" rel="noopener">BZOJ</a></p>
+<h2 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h2><p>我好像也“本机AC提交RE”了……不得不说这题细节真的很多……至少对我而言。</p>
+<h2 id="做法"><a href="#做法" class="headerlink" title="做法"></a>做法</h2><p>首先我们要在题目给你的降雨量序列里不相邻的年份之间以及首尾插入特殊的数据点表示这段时间是未知的，并用std::map&lt;int,int&gt;维护一个年份与其在新序列里对应位置的索引表。用线段树维护区间最大值和未知区域是否存在。<br>对于每一个询问，根据X年、Y年、中间年份（XY相邻则没有中间年份）的情况来判断答案。这里情况非常多，下面代码里后半部分大量的if-else就是了。</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> <span class="meta-keyword">elif</span> <span class="meta-keyword">else</span> <span class="meta-keyword">if</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rd(a) scanf(<span class="meta-string">"%d"</span>,&amp;a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wt(a) printf(<span class="meta-string">"%d "</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> wtl(a) printf(<span class="meta-string">"%d\n"</span>,a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fo(i,a,b) for(int i=a;i&lt;=b;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> init(a,b) memset(a,b,sizeof(a))</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">50000</span>,INF=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n,m,a,b,cnt=<span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> y[N+<span class="number">10</span>],r[N+<span class="number">10</span>];</span><br><span class="line"><span class="keyword">int</span> fb[N*<span class="number">2</span>+<span class="number">10</span>];</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">map</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; mp;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">sgmtree</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> mx[N*<span class="number">4</span>+<span class="number">10</span>],uk[N*<span class="number">4</span>+<span class="number">10</span>];</span><br><span class="line">    <span class="keyword">void</span> _build(<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> p)&#123;</span><br><span class="line">        <span class="keyword">if</span>(l==r)&#123;</span><br><span class="line">            mx[p]=fb[l];</span><br><span class="line">            uk[p]=fb[l]==-INF?<span class="number">1</span>:<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        _build(l,(l+r)/<span class="number">2</span>,p*<span class="number">2</span>);</span><br><span class="line">        _build((l+r)/<span class="number">2</span>+<span class="number">1</span>,r,p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">        mx[p]=<span class="built_in">std</span>::max(mx[p*<span class="number">2</span>],mx[p*<span class="number">2</span>+<span class="number">1</span>]);</span><br><span class="line">        uk[p]=uk[p*<span class="number">2</span>]+uk[p*<span class="number">2</span>+<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">build</span><span class="params">()</span></span>&#123;</span><br><span class="line">        _build(<span class="number">1</span>,cnt,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">std</span>::pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; _query(<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> _l,<span class="keyword">int</span> _r,<span class="keyword">int</span> p)&#123;</span><br><span class="line">        <span class="built_in">std</span>::pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; pr,pr1,pr2;</span><br><span class="line">        <span class="keyword">if</span>((l==_l&amp;&amp;r==_r))&#123;</span><br><span class="line">            pr=<span class="built_in">std</span>::make_pair(mx[p],uk[p]);</span><br><span class="line">            <span class="keyword">return</span> pr;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mid=(l+r)/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span>(_r&lt;=mid)</span><br><span class="line">            <span class="keyword">return</span> _query(l,mid,_l,_r,p*<span class="number">2</span>);</span><br><span class="line">        <span class="keyword">if</span>(_l&gt;=mid+<span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> _query(mid+<span class="number">1</span>,r,_l,_r,p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">        pr1=_query(l,mid,_l,mid,p*<span class="number">2</span>);</span><br><span class="line">        pr2=_query(mid+<span class="number">1</span>,r,mid+<span class="number">1</span>,_r,p*<span class="number">2</span>+<span class="number">1</span>);</span><br><span class="line">        pr.first=<span class="built_in">std</span>::max(pr1.first,pr2.first);</span><br><span class="line">        pr.second=pr1.second+pr2.second;</span><br><span class="line">        <span class="keyword">return</span> pr;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">inline</span> <span class="built_in">std</span>::pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; query(<span class="keyword">int</span> l,<span class="keyword">int</span> r)&#123;</span><br><span class="line">        <span class="keyword">return</span> _query(<span class="number">1</span>,cnt,l,r,<span class="number">1</span>); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;t;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    rd(n);</span><br><span class="line">    fo(i,<span class="number">1</span>,n)</span><br><span class="line">        rd(y[i]),rd(r[i]);</span><br><span class="line">    fb[<span class="number">1</span>]=-INF;</span><br><span class="line">    mp.insert(<span class="built_in">std</span>::make_pair(-INF,<span class="number">1</span>));</span><br><span class="line">    fb[<span class="number">2</span>]=r[<span class="number">1</span>];</span><br><span class="line">    mp.insert(<span class="built_in">std</span>::make_pair(y[<span class="number">1</span>],<span class="number">2</span>));</span><br><span class="line">    fo(i,<span class="number">2</span>,n)&#123;</span><br><span class="line">        <span class="keyword">if</span>(y[i]-y[i<span class="number">-1</span>]&gt;<span class="number">1</span>)</span><br><span class="line">            fb[++cnt]=-INF;</span><br><span class="line">        fb[++cnt]=r[i];</span><br><span class="line">        mp.insert(<span class="built_in">std</span>::make_pair(y[i],cnt));</span><br><span class="line">    &#125;</span><br><span class="line">    fb[++cnt]=-INF;</span><br><span class="line">    mp.insert(<span class="built_in">std</span>::make_pair(INF,cnt));</span><br><span class="line">    t.build();</span><br><span class="line">    rd(m);</span><br><span class="line">    fo(i,<span class="number">1</span>,m)&#123;</span><br><span class="line">        rd(a),rd(b);</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">map</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;::iterator mi1=mp.lower_bound(a),mi2=mp.lower_bound(b);</span><br><span class="line">        <span class="keyword">int</span> a1,a2;</span><br><span class="line">        <span class="built_in">std</span>::pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; a3;</span><br><span class="line">        <span class="keyword">if</span>(mi1-&gt;first!=a)&#123;</span><br><span class="line">            a1=<span class="number">0</span>;</span><br><span class="line">            mi1--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            a1=fb[mi1-&gt;second];</span><br><span class="line">        <span class="keyword">if</span>(mi2-&gt;first!=b)</span><br><span class="line">            a2=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            a2=fb[mi2-&gt;second];</span><br><span class="line">        <span class="keyword">if</span>(mi1-&gt;first==mi2-&gt;first)&#123;</span><br><span class="line">            <span class="built_in">puts</span>(<span class="string">"maybe"</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(mi1-&gt;second==mi2-&gt;second<span class="number">-1</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(a1==<span class="number">0</span>||a2==<span class="number">0</span>)</span><br><span class="line">                <span class="built_in">puts</span>(<span class="string">"maybe"</span>);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                <span class="keyword">if</span>(a1&gt;a2)</span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">"true"</span>);</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">"false"</span>);</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        a3=t.query(mi1-&gt;second+<span class="number">1</span>,mi2-&gt;second<span class="number">-1</span>);</span><br><span class="line">        <span class="keyword">if</span>(a1==<span class="number">0</span>)</span><br><span class="line">            <span class="keyword">if</span>(a2==<span class="number">0</span>)</span><br><span class="line">                <span class="built_in">puts</span>(<span class="string">"maybe"</span>);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                <span class="keyword">if</span>(a2&gt;a3.first)</span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">"maybe"</span>);</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">"false"</span>);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">if</span>(a2==<span class="number">0</span>)</span><br><span class="line">                <span class="keyword">if</span>(a1&gt;a3.first)</span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">"maybe"</span>);</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">"false"</span>);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                <span class="keyword">if</span>(a1&gt;a2)</span><br><span class="line">                    <span class="keyword">if</span>(a3.first&lt;a2)</span><br><span class="line">                        <span class="keyword">if</span>(a3.second)</span><br><span class="line">                            <span class="built_in">puts</span>(<span class="string">"maybe"</span>);</span><br><span class="line">                        <span class="keyword">else</span></span><br><span class="line">                            <span class="built_in">puts</span>(<span class="string">"true"</span>);</span><br><span class="line">                    <span class="keyword">else</span></span><br><span class="line">                        <span class="built_in">puts</span>(<span class="string">"false"</span>);</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    <span class="built_in">puts</span>(<span class="string">"false"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script>
+<script type="text/javascript">
+var gitalk = new Gitalk({
+  clientID: 'fa3b5faae30e9612b010',
+  clientSecret: 'ff498202b20e29bd811889d912713a1eb44b2320',
+  repo: 'sumxylo.github.io',
+  owner: 'Sumxylo',
+  admin: ['Sumxylo'],
+  id: md5('2019-12-10 19:27:40'),
+  distractionFreeMode: false
+})
+gitalk.render('gitalk-container')
+</script>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.sumxylo.top/20191210-SCOI2007-%E9%99%8D%E9%9B%A8%E9%87%8F/" data-id="ck3ztf0t90005mjbs9khi9a1j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CUPOJ/" rel="tag">CUPOJ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/" rel="tag">算法竞赛</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag">线段树</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/20191210-HNOI2009%E9%9B%86%E8%AE%ADDay4-%E6%8E%A2%E9%99%A9%E8%AE%A1%E5%88%92/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">HNOI2009集训Day4 探险计划</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CUPOJ/" rel="tag">CUPOJ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Codeforces/" rel="tag">Codeforces</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%88%98%E8%AE%B0/" rel="tag">战记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E5%8D%A1/" rel="tag">打卡</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E8%A1%A8/" rel="tag">打表</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%87%E5%8C%96%E8%AF%BE/" rel="tag">文化课</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/" rel="tag">算法竞赛</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag">线段树</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" rel="tag">网络流</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BB%E4%B9%A6/" rel="tag">读书</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CUPOJ/" style="font-size: 16.67px;">CUPOJ</a> <a href="/tags/Codeforces/" style="font-size: 13.33px;">Codeforces</a> <a href="/tags/DP/" style="font-size: 10px;">DP</a> <a href="/tags/%E6%88%98%E8%AE%B0/" style="font-size: 13.33px;">战记</a> <a href="/tags/%E6%89%93%E5%8D%A1/" style="font-size: 10px;">打卡</a> <a href="/tags/%E6%89%93%E8%A1%A8/" style="font-size: 10px;">打表</a> <a href="/tags/%E6%96%87%E5%8C%96%E8%AF%BE/" style="font-size: 13.33px;">文化课</a> <a href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/" style="font-size: 20px;">算法竞赛</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 10px;">线段树</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" style="font-size: 10px;">网络流</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 13.33px;">读书</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/20191210-SCOI2007-%E9%99%8D%E9%9B%A8%E9%87%8F/">[SCOI2007]降雨量</a>
+          </li>
+        
+          <li>
+            <a href="/20191210-HNOI2009%E9%9B%86%E8%AE%ADDay4-%E6%8E%A2%E9%99%A9%E8%AE%A1%E5%88%92/">HNOI2009集训Day4 探险计划</a>
+          </li>
+        
+          <li>
+            <a href="/20191204-%E3%80%8A%E8%BE%9B%E4%BA%A5%EF%BC%9A%E8%AE%A1%E5%88%92%E5%A4%96%E9%9D%A9%E5%91%BD%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%89%93%E5%8D%A1/">《辛亥：计划外革命》读书打卡</a>
+          </li>
+        
+          <li>
+            <a href="/20191031-%E4%BE%9D%E6%B3%95%E6%B2%BB%E5%9B%BD%E5%92%8C%E4%BB%A5%E5%BE%B7%E6%B2%BB%E5%9B%BD%E7%9A%84%E5%85%B3%E7%B3%BB/">依法治国和以德治国的关系</a>
+          </li>
+        
+          <li>
+            <a href="/20191028-Codeforces-Round-596-Div-2/">Codeforces Round #596 (Div. 2)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Sumxylo<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
